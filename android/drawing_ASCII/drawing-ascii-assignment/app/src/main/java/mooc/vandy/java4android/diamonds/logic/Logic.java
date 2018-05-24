@@ -54,7 +54,6 @@ public class Logic
             }
             mOut.println("");
         }
-
     }
 
     private void printBorder(int size, int outerLoop, int innerLoop, int counter, int row, int column) {
@@ -83,50 +82,42 @@ public class Logic
         int frameBottom = size * 2 + 1;
 
         if (innerLoop >= diamondLeft && innerLoop <= diamondRight) {
-
             if (innerLoop == diamondLeft || innerLoop == diamondRight) {
-                if (outerLoop < diamondCenter && outerLoop > frameTop) {
+                if (outerLoop < diamondCenter && outerLoop > frameTop)
                     printDiamondFrame(innerLoop, outerLoop, diamondLeft, diamondCenter, diamondRight);
-                } else if (outerLoop == diamondCenter) {
+                else if (outerLoop == diamondCenter)
                     printCenterDiamond(outerLoop, innerLoop, diamondRight, diamondLeft);
-                } else if (outerLoop > diamondCenter && outerLoop < frameBottom) {
+                else if (outerLoop > diamondCenter && outerLoop < frameBottom)
                     printDiamondFrame(innerLoop, outerLoop, diamondLeft, diamondCenter, diamondRight);
-                }
-            } else {
+            } else
                 printCenterDiamond(outerLoop, innerLoop, diamondRight, diamondLeft);
-            }
-
-        } else {
+        } else
             mOut.print(" ");
-        }
     }
 
     private void printDiamondFrame(int innerLoop, int outerLoop, int diamondLeft, int diamondCenter, int diamondRight) {
         if (outerLoop < diamondCenter) {
-            if (innerLoop == diamondLeft) {
+            if (innerLoop == diamondLeft)
                 mOut.print("/");
-            } else {
+            else
                 mOut.print("\\");
-            }
         } else {
-            if (innerLoop == diamondRight) {
+            if (innerLoop == diamondRight)
                 mOut.print("/");
-            } else {
+            else
                 mOut.print("\\");
-            }
         }
     }
 
     private void printCenterDiamond(int outerLoop, int innerLoop, int diamondRight, int diamondLeft) {
-        if (innerLoop == diamondRight) {
+        if (innerLoop == diamondRight)
             mOut.print(">");
-        } else if (innerLoop == diamondLeft) {
+        else if (innerLoop == diamondLeft)
             mOut.print("<");
-        } else if (outerLoop % 2 == 0) {
+        else if (outerLoop % 2 == 0)
             mOut.print("=");
-        } else {
+        else
             mOut.print("-");
-        }
     }
 
 }
