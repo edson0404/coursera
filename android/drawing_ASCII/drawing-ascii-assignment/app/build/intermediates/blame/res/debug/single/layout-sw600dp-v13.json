@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/edson/Documents/workspace/coursera/android/drawing_ASCII/m4-assignment-diamond-sizes-skeleton 2/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/layout_snackbar.xml",
+        "source": "/Users/edson/Documents/workspace/coursera/android/drawing_ASCII/m4-assignment-diamond-sizes-skeleton 2/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout-sw600dp/layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/edson/Documents/workspace/coursera/android/drawing_ASCII/drawing-ascii-assignment/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/layout_snackbar.xml",
+        "source": "/Users/edson/Documents/workspace/coursera/android/drawing_ASCII/drawing-ascii-assignment/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout-sw600dp/layout_snackbar.xml"
+    }
+]
